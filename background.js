@@ -47,7 +47,7 @@ var createMenuItem = function(details) {
 		"title": "Block ads from this source",
 		"contexts": ["all"]};
 	chrome.contextMenus.create(menuProperties);
-	chrome.contextMenus.onClicked.addListener(addTpBannedDomains);
+	chrome.contextMenus.onClicked.addListener(addToBannedDomains);
 }
 
 // Create context menu item when extension is first installed
